@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text1 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.Login {
+    background-color: rgb(12, 119, 9);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.672);
+    padding-right: 17px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+    animation: fade .3s forwards;
+}
+
+.modal.show {
+    display: block;
+    animation: fade .5s forwards;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    max-width: 576px;
+    margin: 50px auto;
+}
+
+.modal-content {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-content .modal-header {
+    padding: 30px 30px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
